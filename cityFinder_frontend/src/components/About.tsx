@@ -8,7 +8,8 @@ const About = () => {
 
       <div className="container-fluid py-2">
         <h2 className="font-weight-light">
-          
+          This website allow you to search different cities in the UK, with their descriptions and places of interest.
+          Students and tourists coming to the UK might find this website useful
         </h2>
         
       </div>

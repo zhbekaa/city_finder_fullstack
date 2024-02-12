@@ -21,13 +21,16 @@ nav {
   background-color: #f0f0f0;
 }
 
+.nav-items {
+  flex-direction: row;
+}
+
 .scrolling-wrapper {
   overflow-x: auto;
   white-space: nowrap;
 }
 
 .uni-card {
-  margin: 3rem;
   background-position: 50% 50%;
   background-size: cover;
   border-radius: 29px;
@@ -50,26 +53,51 @@ nav {
 .uni-card .overlap-group .text-wrapper {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: clip; /* This will make the text overflow without an ellipsis */
+  text-overflow: clip;
+  /* This will make the text overflow without an ellipsis */
   color: #ffffff;
   font-family: "Rakkas-Regular", Helvetica;
-  font-size: 22px; /* You may want to adjust the font size */
+  font-size: 22px;
+  /* You may want to adjust the font size */
   font-weight: 400;
   position: absolute;
   text-align: center;
   margin-bottom: 1rem;
   max-width: fit-content;
   width: 100%;
-  /* white-space:normal;
-  text-overflow:ellipsis;
 
-  color: #ffffff;
-  font-family: "Rakkas-Regular", Helvetica;
-  font-size: 22px;
-  font-weight: 400;
-  position: absolute;
-  text-align: center;
-  margin-bottom: 1rem;
-  max-width: fit-content;
-  width: 100%; */
 }
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.contact-list li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 2;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+ @media screen and (max-width: 768px) {
+  .nav-items {
+    flex-direction: column;
+  }
+} 
+ 

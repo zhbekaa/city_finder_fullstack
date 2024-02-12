@@ -5,7 +5,7 @@ import "./App.css";
 import Cities from "./components/Cities";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
-import City from "./components/City";
+import CityDetailed from "./components/CityDetailed";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" Component={Cities}></Route>
           <Route path="/about" Component={About} />
           <Route path="/contact" Component={Contact} />
-          <Route path="/cities/:city_id" Component={City} />
+          <Route path="/cities/:city_id" Component={CityDetailed} />
         </Routes>
       </Router>
     </div>
