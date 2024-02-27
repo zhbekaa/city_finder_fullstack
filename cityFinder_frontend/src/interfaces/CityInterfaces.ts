@@ -17,7 +17,7 @@ export interface CityAttribute {
 export interface CityDetails {
     id: number;
     name: string;
-    img: null;
+    img: string;
     description: string;
     created_at: string;
     update_at: string;

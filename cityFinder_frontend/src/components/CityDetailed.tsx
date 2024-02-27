@@ -40,6 +40,7 @@ const CityDetailed = () => {
     fetch(`http://127.0.0.1:8000/api/cities/${city_id}`)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data)
         setCity(data);
       })
       .catch((err) => console.log(err));
@@ -54,6 +55,8 @@ const CityDetailed = () => {
         paddingLeft: "100px",
       }}
     >
+      <img src={city?.img} alt="" />
+
       <h1>{city?.name}</h1>
       <p>{city?.description}</p>
 

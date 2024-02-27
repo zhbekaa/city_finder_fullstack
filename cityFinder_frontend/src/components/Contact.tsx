@@ -33,7 +33,7 @@ const Contact = () => {
           </svg>
           {/* <FaLinkedin className="contact-icon" /> */}
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/bektursyn-zhukeshbayev-532953253/"
             target="_blank"
             rel="noopener noreferrer"
           >
