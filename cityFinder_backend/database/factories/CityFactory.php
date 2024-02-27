@@ -18,7 +18,6 @@ class CityFactory extends Factory
     {
         return [
             "name" => "",
-            "description" => $this->faker->realText(),
             "img" => 'https://placehold.co/600x400',
             'created_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
         ];

@@ -14,13 +14,14 @@ class CitySeeder extends Seeder
      */
     public function run(): void
     {
-        $json = Storage::disk("local")->get("/json/cities_with_images.json");
+        $json = Storage::disk("local")->get("/json/cities.json");
 
         $jcities = json_decode($json, true);
         foreach ($jcities as $city) {
             $cities = City::factory()->create([
                 "name" => $city["city"],
                 "img" => $city['img'],
+                "description" => $city['description'],
                 "population" => $city["population"],
                 "lat" => $city["lat"],
                 "lng" => $city["lng"]

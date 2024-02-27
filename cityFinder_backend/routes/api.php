@@ -21,4 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('cities', [CityController::class, 'list']);
+
 Route::get('cities/{id}', [CityController::class, 'details']);
